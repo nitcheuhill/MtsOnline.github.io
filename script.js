@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
 
     burger.addEventListener('click', () => {
+        burger.classList.toggle('open');
         navLinks.classList.toggle('active');
     });
 
@@ -113,3 +114,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
 
+
+
+    // 
+//     const broderieItems = document.querySelectorAll('.broderie-item');
+
+// broderieItems.forEach(item => {
+//   item.addEventListener('click', () => {
+//     // Ouvrir une fenêtre modale ou afficher plus d'informations sur le produit
+//   });
+// });
