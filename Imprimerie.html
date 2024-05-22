@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTS Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-slogan">
+            <img src="logo.png" alt="Logo de l'entreprise">
+            <span>Mega Trading & Services</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Accueil</a></li>
+                <li><a href="home.html#about">À propos</a></li>
+                <li class="dropdown">
+                    <a href="#services" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="Imprimerie.html">Imprimerie</a>
+                        <a href="broderie.html">Broderie</a>
+                        <a href="serigraphie.html">Sérigraphie</a>
+                        <a href="packaging.html">Packaging</a>
+                        <a href="signaletique.html">Signalétique</a>
+                        <a href="tampographie.html">Tampographie</a>
+                    </div>
+                </li>
+                <li><a href="Clients.html">Nos clients</a></li>
+                <li><a href="home.html#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="section">
+            <h1 style="color: #ff6600;" class="title-left">Imprimez avec nous</h1>
+            <h2 style="color: #ff6600;">Imprimerie Offset</h2>
+            <div class="offset-printing">
+                <div class="description">
+                    <h4 style="text-align: left">
+                        Imprimerie offset : Des chefs-d'œuvre en série !
+
+                        Rapide, économique, et de qualité irréprochable, l'impression offset est idéale pour vos projets ambitieux.
+
+                        Affiches, brochures, magazines, livres... Donnez vie à vos créations avec des impressions aux couleurs vibrantes et aux détails précis.
+
+                        Parfaite pour les grandes quantités, l'impression offset vous offre un rapport qualité-prix imbattable.
+
+                        Ne perdez plus de temps, contactez-nous dès aujourd'hui !
+
+                        Nous offrons des services d'imprimerie offset de haute qualité pour répondre à tous vos besoins d'impression. Que ce soit pour des brochures, des affiches, des cartes de visite ou tout autre type de support, notre équipe est là pour vous fournir des résultats impeccables.</h4>
+                </div>
+                <div class="video">
+                    <video controls muted>
+                        <source src="imprimerie.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2 style="color: #ff6600;">Nos Produits en Imprimerie Offset</h2>
+            <div class="product-gallery">
+                <!-- Les produits seront affichés ici -->
+                <div class="product" onclick="showProductDescription('product1')" data-description="Sublimez vos murs avec des affiches et posters qui vous ressemblent !">
+                    <img src="affiches.jpg" alt="Produit 1">
+                    <p>Affiches et posters</p>
+                </div>
+                <div class="product" onclick="showProductDescription('product2')" data-description="Des cartes de visite qui font mouche !
+
+                Votre première impression est la plus importante. Offrez à vos contacts une carte de visite qui vous ressemble et qui vous démarque.">
+                    <img src="carte de visite.jpg" alt="Produit 2">
+                    <p>Cartes de visite</p>
+                </div>
+                <div class="product" onclick="showProductDescription('product3')" data-description="Etiquettes et emballages : Habillez vos produits avec élégance et distinction !
+
+                Valorisez votre marque et boostez vos ventes avec des étiquettes et emballages sur mesure qui attirent l'attention et suscitent le désir.">
+                    <img src="etiquettes.jpg" alt="Produit 3">
+                    <p>Etiquettes et emballages</p>
+                </div>
+                <div class="product" onclick="showProductDescription('product4')" data-description="Des formulaires sur mesure : Simplifiez vos démarches et boostez votre productivité !
+
+                Dites adieu aux formulaires papier fastidieux et inefficaces. Optez pour des formulaires sur mesure qui s'adaptent parfaitement à vos besoins et à vos exigences.">
+                    <img src="formulaires.jpg" alt="Produit 4">
+                    <p>Formulaires</p>
+                </div>
+            </div>
+            <div id="product-description" class="product-description">
+                Cliquez sur un produit pour voir la description.
+            </div>
+        </section>
+
+
+        <section class="section">
+            <!-- <h1 style="color: #ff6600;" class="title-left">Imprimez avec nous</h1> -->
+            <h2 style="color: #ff6600;">Imprimerie numérique</h2>
+            <div class="offset-printing">
+                <div class="description">
+                    <h1 style="text-align: left">
+                        L'impression numérique : Une technologie révolutionnaire au service de votre communication
+                    </h1>
+                    <h3 style="text-align: left">
+                        L'impression numérique est un procédé d'impression qui utilise des technologies numériques pour créer
+                         des images et des textes directement à partir de fichiers informatiques. Contrairement aux méthodes
+                          d'impression traditionnelles, qui reposent sur des plaques physiques ou des moules, l'impression 
+                          numérique utilise des processus électrostatiques, à jet d'encre ou laser pour transférer des images
+                           numériques sur un support d'impression.
+                    </h3>
+                    <p style="text-align: left">
+                        Cette technologie offre de nombreux avantages par rapport aux méthodes d'impression traditionnelles, notamment :
+
+    Une qualité d'impression supérieure : L'impression numérique permet d'obtenir des images et des textes d'une très haute résolution, avec des couleurs vibrantes et des détails précis.
+    Une grande flexibilité : L'impression numérique permet d'imprimer des documents à la demande, en petites ou grandes quantités, et sur une large variété de supports, tels que le papier, le carton, le plastique, le textile, etc.
+    Des coûts d'impression optimisés : L'impression numérique est particulièrement économique pour les impressions à faible tirage, car elle ne nécessite pas la fabrication de plaques ou de moules.
+    Une rapidité d'exécution : L'impression numérique permet de réaliser des impressions en un temps record, ce qui est particulièrement important pour les projets urgents.
+    Une démarche plus écologique : L'impression numérique utilise moins d'encre et de produits chimiques que les méthodes d'impression traditionnelles, ce qui en fait une solution plus écologique.
+                    </p>
+                </div>
+                <div class="video">
+                    <video controls muted>
+                        <source src="background.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la balise vidéo.
+                    </video>
+                </div>
+            </div>
+        </section>
+     
+        <section id="digital-printing" class="section digital-printing-section1">
+            <h2>Nos produits dans la catégorie du numérique</h2>
+            <div class="products-container1">
+                <div class="product1">
+                    <img src="magasin.jpg" alt="Produit 1">
+                    <h3>Magazines</h3>
+                    <p>Description du produit 1 dq.</p>
+                </div>
+                <div class="product1">
+                    <img src="calendrier.jpg" alt="Produit 2">
+                    <h3>Calendriers</h3>
+                    <p>Maîtrisez votre temps.</p>
+                </div>
+          
+                <div class="product1">
+                    <img src="flyer.jpg" alt="Produit 4">
+                    <h3>Flyers</h3>
+                    <p>Description du produit 2.</p>
+                </div>
+                <div class="product1">
+                    <img src="Billets.jpg" alt="Produit 5">
+                    <h3>Billets d'invitation</h3>
+                    <p>Faite part de vos évènements avec grâce.</p>
+                </div>     
+                 <div class="product1">
+                    <img src="brochure.jpg" alt="Produit 3">
+                    <h3>Brochures</h3>
+                    <p>Description du produit 2.</p>
+                </div>
+                <div class="product1">
+                    <img src="visite.jpg" alt="Produit 6">
+                    <h3>Carte de visite</h3>
+                    <p>Votre première impréssion est plus importante.</p>
+                </div>
+                <div class="product1">
+                    <img src="voeux.jpg" alt="Produit 7">
+                    <h3>Carte de voeux</h3>
+                    <p>Rien ne vaut un souhait bien formulé.</p>
+                </div>
+                <!-- Ajoutez d'autres produits ici -->
+            </div>
+        </section>
+        
+
+
+
+        
+
+        
+        
+
+
+
+    </main>
+    <footer class="printfoot">
+        <p>&copy; 2024 Mega Trading & Services. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

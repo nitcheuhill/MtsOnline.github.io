@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTS Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-slogan">
+            <img src="logo.png" alt="Logo de l'entreprise">
+            <span>Mega Trading & Services</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li class="dropdown">
+                    <a href="#services" class="dropbtn">Services</a>
+                    <div class="dropdown-content" id = "service-dropdown-content">
+                        <a href="Imprimerie.html">Imprimerie</a>
+                        <a href="broderie.html">Broderie</a>
+                        <a href="serigraphie.html">Sérigraphie</a>
+                        <a href="packaging.html">Packaging</a>
+                        <a href="signaletique.html">Signalétique</a>
+                        <a href="tampographie.html">Tampographie</a>
+                    </div>
+                </li>
+                <li><a href="Clients.html">Nos clients</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="section">
+            <div class="intro">
+                <div class="intro-text">
+                    <h1 style="color: #ff6600;">Bienvenue chez vous</h1>
+                    <h1>Votre partenaire pour l'imprimerie ,la broderie, sérigraphie, packaging, signalétique, et tampographie.</h1>
+                </div>
+                <!-- <video autoplay muted loop id="video">
+                    <source src="imprimerie.mp4" type="video/mp4">
+                </video> -->
+                <img src="image0.jpg" alt="Imprimante Offset">
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="about-us">
+                <div class="description">
+                    <h2 style="color: #ff6600;">À propos de nous</h2>
+                    <p style="text-align: justify;">Depuis 15 ans nous mettons tout notre expertise au service de notre clientèle.
+                         Nous étudions et travaillons continuellement pour vous offrir les meilleurs techniques pour parfaire
+                          vos imprimés. Nous donnons ainsi la possibilité à tout type d'entreprises, organisations, personnes
+                           physiques de mieux communiqué avec son public même sans être présent. Toujours attentifs à 
+                           l'emergence des nouvelles techniques et à l'évolution des technologies pour les impression et marquage... 
+                           nous saurons vous conseiller et vous accompagner dans une démarche globale d'analyse de vos attentes, proposition
+                            par simulations informatiques et réalisations du projet final. </p>
+                </div>
+                <div class="map">
+                    <!-- Intégrer une carte ici -->
+                    <iframe src="https://www.google.com/maps/embed?pb=..."></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="hours" class="section">
+            <h2 style="color: #ff6600;">Nos Horaires</h2>
+            <ul class="timeline">
+                <li>
+                    <span class="day">Lundi:</span>
+                    <div class="progress" style="width: 30%;"></div> 08h00 - 17h00
+                </li>
+                <li>
+                    <span class="day">Mardi:</span>
+                    <div class="progress" style="width: 30%;"></div> 08h00 - 17h00
+                </li>
+                <li>
+                    <span class="day">Mercredi:</span>
+                    <div class="progress" style="width: 30%;"></div> 08h00 - 17h00
+                </li>
+                <li>
+                    <span class="day">Jeudi:</span>
+                    <div class="progress" style="width: 30%;"></div> 08h00 - 17h00
+                </li>
+                <li>
+                    <span class="day">Vendredi:</span>
+                    <div class="progress" style="width: 30%;"></div> 08h00 - 17h00
+                </li>
+                <li>
+                    <span class="day">Samedi:</span>
+                    <div class="progress" style="width: 30%;"></div> 09h00 - 14h00
+                </li>
+            </ul>
+        </section>
+    
+    <section class="section">
+        <h2 style="color: #ff6600;">Commandes populaires</h2>
+        <div class="product-gallery">
+            <!-- Les produits seront affichés ici -->
+            <div class="product" onclick="showProductDescription('product4')" data-description="Des formulaires sur mesure : Simplifiez vos démarches et boostez votre productivité !
+
+            Dites adieu aux formulaires papier fastidieux et inefficaces. Optez pour des formulaires sur mesure qui s'adaptent parfaitement à vos besoins et à vos exigences.">
+                <img src="formulaires.jpg" alt="Produit 4">
+                <p>Formulaires et carnet de reçu</p>
+            </div>
+
+            <div class="product" onclick="showProductDescription('product6')" data-description="Le nouvel an.">
+                <img src="calendrier.jpg" alt="Produit 6">
+                <p>Calendrier</p>
+            </div>
+
+            <div class="product" onclick="showProductDescription('product1')" data-description="Sublimez vos murs avec des affiches et posters qui vous ressemblent !">
+                <img src="affiches.jpg" alt="Produit 1">
+                <p>Affiches et posters</p>
+            </div>
+            <div class="product" onclick="showProductDescription('product2')" data-description="Des cartes de visite qui font mouche !
+
+            Votre première impression est la plus importante. Offrez à vos contacts une carte de visite qui vous ressemble et qui vous démarque.">
+                <img src="carte de visite.jpg" alt="Produit 2">
+                <p>Cartes de visite</p>
+            </div>
+            <div class="product" onclick="showProductDescription('product3')" data-description="Etiquettes et emballages : Habillez vos produits avec élégance et distinction !
+
+            Valorisez votre marque et boostez vos ventes avec des étiquettes et emballages sur mesure qui attirent l'attention et suscitent le désir.">
+                <img src="etiquettes.jpg" alt="Produit 3">
+                <p>Etiquettes et emballages</p>
+            </div>
+     
+            <div class="product" onclick="showProductDescription('product5')" data-description="Votre vêtement vous définit personnalisez votre image chez nous.">
+                <img src="tshirt.jpg" alt="Produit 5">
+                <p>Tshirt et casquette personnalisée</p>
+            </div>
+        </div>
+        <div id="product-description" class="product-description">
+            Cliquez sur un produit pour voir la description.
+        </div>
+    </section>
+        <section id="contact" class="section">
+            <h2 style="color: #ff6600;"> - Devenez un de nos clients - </h2>
+            <form>
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="tel">Téléphone:</label>
+                <input type="tel" id="tel" name="tel" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required placeholder="Passez votre commande et un correspondant vous contacteras dans les plus bref délais."></textarea>
+                <button type="submit" class="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mega Trading & Services. Tous droits réservés.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

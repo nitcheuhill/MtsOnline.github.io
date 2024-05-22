@@ -1,0 +1,556 @@
+/*  */
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgba(232, 168, 96, 0.845);
+    color: #333;
+    transition: background-color 0.5s ease;
+}
+
+header {
+    background-color: #f49657;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 98%;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    margin-left: auto;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo-slogan {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+   
+}
+
+.logo-slogan img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ec9c67;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 0; /* Adjust position to be fully visible */
+    border-radius: 10px;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffe5b4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        background-color: #d3d0cd;
+        width: 100%;
+        margin-top: 60px; /* Adjust for header height */
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .burger {
+        display: flex;
+    }
+    .dropdown-content {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+}
+
+.section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #fff3e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 65vh;
+    min-height: 65vh;
+    margin-top: 80px; /* Adjust for header height */
+}
+
+.intro-text {
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.intro img {
+    max-width: 45%;
+    height: auto;
+    max-height: 45vh;
+    border-radius: 15px;
+    /* box-shadow: #333; */
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #fff3e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 50vh;
+}
+
+.description,
+.map {
+    max-width: 45%;
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    background: #fff3e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+    min-width: 60vw;
+    max-height: 100vh;
+}
+
+.timeline li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.timeline li:last-child {
+    border-bottom: none;
+}
+
+.timeline .day {
+    font-weight: bold;
+    color: #ff6600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff3e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #e65c00;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 70px;
+
+
+}
+.clientfoot{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 70px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* top: 100%; */
+}
+.submit {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.submit:hover {
+    background-color: #333;
+    color: #ff6600;
+}
+
+@media (max-width: 992px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-text,
+    .intro img {
+        max-width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+    }
+    .description,
+    .map {
+        max-width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+
+#clients {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.client-logos img {
+    width: 150px; /* Ajustez la taille des logos selon vos besoins */
+    margin: 20px; /* Espace entre les logos */
+}
+
+/*  */
+/*  */
+/* CSS pour la page d'imprimerie */
+/* CSS pour la page d'imprimerie */
+.offset-printing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff3e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.offset-printing .description {
+    max-width: 50%;
+}
+
+.offset-printing .video {
+    max-width: 45%;
+}
+
+.offset-printing .video video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+    .offset-printing {
+        flex-direction: column;
+    }
+    .offset-printing .description,
+    .offset-printing .video {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background: #fff3e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #ec9c67;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.product:hover {
+    background-color: #ff6600;
+}
+.product img {
+    width: 100%;
+    height: 250px; /* Fixe la hauteur des images */
+    object-fit: cover; /* Redimensionne et coupe proportionnellement */
+    border-radius: 10px;
+}
+@media (max-width: 768px) {
+    .product {
+        width: 45%; /* Ajuste la largeur des produits */
+    }
+
+    .product img {
+        height: 150px; /* Ajuste la hauteur des images pour les petits écrans */
+        object-fit: cover; /* Assure que l'image couvre bien l'espace disponible */
+        object-position: center; /* Centre l'image */
+    }
+}
+
+.product-description {
+    padding: 20px;
+    background: #fff3e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.title-left {
+    text-align: left; /* Alignement du texte à gauche */
+    margin-left: 20px; /* Décalage vers la gauche */
+}
+
+.clientfoot{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 70px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*  */
+
+
+.digital-printing-section1 {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.products-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product1 {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product1:hover {
+    transform: translateY(-10px);
+}
+
+.product1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product1 h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.product1 p {
+    margin-top: 10px;
+    color: #666;
+}
+
+/*  */
+/*  */
+
+
+
+/* Section Produits Broderie */
+.produits-broderie-section {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 70px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.produits-broderie-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #ff6600;
+    position: relative;
+    z-index: 1;
+    animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.produits-broderie-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.produit {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    min-width: 280px;
+    position: relative;
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.produit img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.produit:hover img {
+    transform: scale(1.05);
+}
+
+.produit-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.produit-info h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.produit-info p {
+    margin: 0;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .produits-broderie-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produit {
+        width: 80%;
+    }
+}
