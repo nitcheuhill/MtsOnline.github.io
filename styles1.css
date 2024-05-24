@@ -118,11 +118,9 @@ header {
         display: none;
         flex-direction: column;
         text-align: center;
-        /* background-color: #d3d0cd; */
-        background-color: #ebd9b4;
+        background-color: #d3d0cd;
         width: 100%;
-        margin-top: 10px; /* Adjust for header height */
-        border-radius: 5px;
+        margin-top: 60px; /* Adjust for header height */
     }
     .nav-links.active {
         display: flex;
@@ -149,7 +147,7 @@ header {
     background: #fff3e0;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /* max-height: 65vh; */
+    max-height: 65vh;
     min-height: 65vh;
     margin-top: 80px; /* Adjust for header height */
 }
@@ -157,34 +155,16 @@ header {
 .intro-text {
     max-width: 50%;
     padding-right: 20px;
-    margin-top: 120px;
-}
-@media (max-width: 768px) {
-    .intro-text {
-        margin-top: 1px; /* Adjust for header height */
-    }
 }
 
 .intro img {
     max-width: 45%;
     height: auto;
-    /* max-height: 45vh; */
+    max-height: 45vh;
     border-radius: 15px;
     /* box-shadow: #333; */
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    /* object-fit: contain; */
-    object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
 
 .about-us {
     display: flex;
@@ -194,21 +174,11 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     min-height: 50vh;
-    
 }
 
 .description,
 .map {
-    max-width: 700%;
-    min-width: 50%;
-    margin-top: 10px;
-}
-
-
-@media (max-width: 768px) {
-    .description {
-        margin-top: 1px; /* Adjust for header height */
-    }
+    max-width: 45%;
 }
 
 .timeline {
@@ -619,44 +589,3 @@ footer {
 
 
 
-
-
-.serigraphie-section {
-    background-color: #fffaeb; /* Couleur orange clair */
-    padding: 20px;
-  }
-  
-  .serigraphie-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .serigraphie-item {
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10px; /* Effet d'arrondi */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre portée */
-    transition: transform 0.3s ease; /* Animation de transition */
-  }
-  
-  .serigraphie-item:hover {
-    transform: scale(1.1); /* Agrandissement au survol */
-  }
-  
-  .serigraphie-item img {
-    width: 100%;
-    height: 200px; /* Ajuster la hauteur selon vos besoins */
-    object-fit: cover; /* Maintenir le rapport hauteur/largeur */
-  }
-  
-  .serigraphie-item h3 {
-    color: #f57c00; /* Orange foncé */
-    margin-bottom: 10px;
-  }
-  
-  .serigraphie-item p {
-    color: #333;
-    line-height: 1.5;
-  }
-  
