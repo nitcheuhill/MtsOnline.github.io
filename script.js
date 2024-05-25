@@ -124,3 +124,20 @@ document.addEventListener('DOMContentLoaded', () => {
 //     // Ouvrir une fenêtre modale ou afficher plus d'informations sur le produit
 //   });
 // });
+
+
+let currentImageIndex = 0;
+const images = ["image0.jpg","image1.jpg","image2.jpg"];
+
+function changeImage(direction){
+    currentImageIndex += direction;
+
+    if (currentImageIndex >= images.length){
+        currentImageIndex = 0;
+    } else if (currentImageIndex < 0) {
+        currentImageIndex = images.length - 1;
+    }
+
+    document.getElementById("slider-image").src = images[currentImageIndex];
+    
+}

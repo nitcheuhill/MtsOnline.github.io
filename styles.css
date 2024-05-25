@@ -26,7 +26,7 @@ header {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     margin-left: auto;
     flex-grow: 1;
 }
@@ -46,7 +46,7 @@ header {
     display: flex;
     align-items: center;
     margin-right: auto;
-   
+
 }
 
 .logo-slogan img {
@@ -65,7 +65,8 @@ header {
     width: 30px;
     height: 24px;
     transition: all 0.3s ease;
-    margin-right: 20px;  /* Added margin to move it away from the edge */
+    margin-right: 20px;
+    /* Added margin to move it away from the edge */
 }
 
 .burger div {
@@ -94,7 +95,8 @@ header {
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    left: 0; /* Adjust position to be fully visible */
+    left: 0;
+    /* Adjust position to be fully visible */
     border-radius: 10px;
 }
 
@@ -121,15 +123,19 @@ header {
         /* background-color: #d3d0cd; */
         background-color: #ebd9b4;
         width: 100%;
-        margin-top: 10px; /* Adjust for header height */
+        margin-top: 10px;
+        /* Adjust for header height */
         border-radius: 5px;
     }
+
     .nav-links.active {
         display: flex;
     }
+
     .burger {
         display: flex;
     }
+
     .dropdown-content {
         position: relative;
         width: 100%;
@@ -151,7 +157,8 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /* max-height: 65vh; */
     min-height: 65vh;
-    margin-top: 80px; /* Adjust for header height */
+    margin-top: 80px;
+    /* Adjust for header height */
 }
 
 .intro-text {
@@ -159,11 +166,28 @@ header {
     padding-right: 20px;
     margin-top: 120px;
 }
+
 @media (max-width: 768px) {
     .intro-text {
-        margin-top: 1px; /* Adjust for header height */
+        margin-top: 1px;
+        /* Adjust for header height */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .intro img {
     max-width: 45%;
@@ -186,6 +210,24 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .about-us {
     display: flex;
     justify-content: space-around;
@@ -194,7 +236,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     min-height: 50vh;
-    
+
 }
 
 .description,
@@ -207,7 +249,8 @@ header {
 
 @media (max-width: 768px) {
     .description {
-        margin-top: 1px; /* Adjust for header height */
+        margin-top: 1px;
+        /* Adjust for header height */
     }
 }
 
@@ -288,7 +331,8 @@ footer {
 
 
 }
-.clientfoot{
+
+.clientfoot {
     background-color: #333;
     color: white;
     text-align: center;
@@ -299,6 +343,7 @@ footer {
     width: 100%;
     /* top: 100%; */
 }
+
 .submit {
     transition: background-color 0.3s, color 0.3s;
 }
@@ -313,6 +358,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
     .intro-text,
     .intro img {
         max-width: 100%;
@@ -324,6 +370,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
     .description,
     .map {
         max-width: 100%;
@@ -345,8 +392,10 @@ footer {
 }
 
 .client-logos img {
-    width: 150px; /* Ajustez la taille des logos selon vos besoins */
-    margin: 20px; /* Espace entre les logos */
+    width: 150px;
+    /* Ajustez la taille des logos selon vos besoins */
+    margin: 20px;
+    /* Espace entre les logos */
 }
 
 /*  */
@@ -381,6 +430,7 @@ footer {
     .offset-printing {
         flex-direction: column;
     }
+
     .offset-printing .description,
     .offset-printing .video {
         max-width: 100%;
@@ -412,21 +462,30 @@ footer {
 .product:hover {
     background-color: #ff6600;
 }
+
 .product img {
     width: 100%;
-    height: 250px; /* Fixe la hauteur des images */
-    object-fit: cover; /* Redimensionne et coupe proportionnellement */
+    height: 250px;
+    /* Fixe la hauteur des images */
+    object-fit: cover;
+    /* Redimensionne et coupe proportionnellement */
     border-radius: 10px;
 }
+
 @media (max-width: 768px) {
     .product {
-        width: 45%; /* Ajuste la largeur des produits */
+        width: 75%;
+        /* Ajuste la largeur des produits */
+        /* height: 50%; */
     }
 
     .product img {
-        height: 150px; /* Ajuste la hauteur des images pour les petits écrans */
-        object-fit: cover; /* Assure que l'image couvre bien l'espace disponible */
-        object-position: center; /* Centre l'image */
+        height: 150px;
+        /* Ajuste la hauteur des images pour les petits écrans */
+        object-fit: cover;
+        /* Assure que l'image couvre bien l'espace disponible */
+        object-position: center;
+        /* Centre l'image */
     }
 }
 
@@ -440,11 +499,14 @@ footer {
 }
 
 .title-left {
-    text-align: left; /* Alignement du texte à gauche */
-    margin-left: 20px; /* Décalage vers la gauche */
+    text-align: left;
+    /* Alignement du texte à gauche */
+    margin-left: 20px;
+    /* Décalage vers la gauche */
+    margin-top: 50px;
 }
 
-.clientfoot{
+.clientfoot {
     background-color: #333;
     color: white;
     text-align: center;
@@ -490,6 +552,7 @@ footer {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    /* height: 75px; */
 }
 
 .product1 h3 {
@@ -501,6 +564,13 @@ footer {
     margin-top: 10px;
     color: #666;
 }
+
+/* 
+@media (max-width: 768px) {
+    .product1 img {  
+    }
+} */
+
 
 /*  */
 /*  */
@@ -533,6 +603,7 @@ footer {
         opacity: 0;
         transform: translateY(-50px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -562,6 +633,7 @@ footer {
         opacity: 0;
         transform: translateY(50px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -622,41 +694,48 @@ footer {
 
 
 .serigraphie-section {
-    background-color: #fffaeb; /* Couleur orange clair */
+    background-color: #fffaeb;
+    /* Couleur orange clair */
     padding: 20px;
-  }
-  
-  .serigraphie-container {
+}
+
+.serigraphie-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  
-  .serigraphie-item {
+}
+
+.serigraphie-item {
     margin: 10px;
     padding: 20px;
-    border-radius: 10px; /* Effet d'arrondi */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre portée */
-    transition: transform 0.3s ease; /* Animation de transition */
-  }
-  
-  .serigraphie-item:hover {
-    transform: scale(1.1); /* Agrandissement au survol */
-  }
-  
-  .serigraphie-item img {
+    border-radius: 10px;
+    /* Effet d'arrondi */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Ombre portée */
+    transition: transform 0.3s ease;
+    /* Animation de transition */
+}
+
+.serigraphie-item:hover {
+    transform: scale(1.1);
+    /* Agrandissement au survol */
+}
+
+.serigraphie-item img {
     width: 100%;
-    height: 200px; /* Ajuster la hauteur selon vos besoins */
-    object-fit: cover; /* Maintenir le rapport hauteur/largeur */
-  }
-  
-  .serigraphie-item h3 {
-    color: #f57c00; /* Orange foncé */
+    height: 200px;
+    /* Ajuster la hauteur selon vos besoins */
+    object-fit: cover;
+    /* Maintenir le rapport hauteur/largeur */
+}
+
+.serigraphie-item h3 {
+    color: #f57c00;
+    /* Orange foncé */
     margin-bottom: 10px;
-  }
-  
-  .serigraphie-item p {
+}
+
+.serigraphie-item p {
     color: #333;
     line-height: 1.5;
-  }
-  
+}
